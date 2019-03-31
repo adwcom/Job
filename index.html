@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Главная</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="type"> 
+	Выбрать тип конструкции: <br>
+		<label class="typeone">
+		<img src="image/type 1.jpg" width="200" height="150">  
+		Тип конструкции 1<input type="radio" id="one" name="type" checked >
+		</label>
+		<label class="typetwo">
+		<img src="image/type 2.jpg" width="200" height="150">
+		Тип конструкции 2<input type="radio" id="two" name="type">
+		</label>
+		<label class="typetree">
+		<img src="image/type 3.jpg" width="350" height="150">
+		Тип конструкции 3<input type="radio" id="tree" name="type">
+		</label>
+		<label class="typefour">
+		<img src="image/type 4.jpg"width="350" height="150">
+		Тип конструкции 4<input type="radio" id="four" name="type"><br>
+		</label>
+		</div>
+	<div><br><br>
+		Высота, мм - <input type="number" id="he" min="1300" max="3200" name="height" maxlength="4">
+		Ширина, мм - <input type="number" id="wi" min="1500" max="6445" name="width" maxlength="4"><br>
+		Количество, шт - <input type="number" id="pi" min="1" name="piece" maxlength="2"><br>
+		Стеклопакет, руб. за м. кв. - <input type="number" id="mo" min="0" name="money" maxlength="4"><br>
+		
+</div>
+<div>
+		Выбрать цвет:<br>
+		Белый/Коричневый<input type="radio" name="color" id="white" checked><br>
+		Серый<input type="radio" name="color" id="gray"><br>
+		покраска<input type="checkbox"><br>
+	</div>	
+		Диллерский<input type="radio" name="department" id="dl" checked><br>
+		Розница Таганрог<input type="radio" name="department" id="rtag"><br>
+		Розница Ростов<input type="radio" name="department" id="rros"><br>
+		Розница Краснодар<input type="radio" name="department" id="rkras"><br>
+		<br>
+		<button id="sub">Расчитать</button>
+	
+	<div id="result">0</div>
+		
+</body>
+<script src="js/script.js"></script>
+</html>	
